@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="userProfiles">
+<head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/1f72b8ff1e.js"></script>
+    <title>mini-userProfiles</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+</head>
+<body ng-controller="mainController">
+
+  <div>
+    <input ng-model = 'quote_search' type = 'text' placeholder = 'search for quotes here' >
+  </div>
+
+  <div class = 'first_div'>
+    <h1>Add Quote</h1>
+<button class = 'add_button' ng-click = "add_button_click()"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+
+  </div>
+
+
+
+  <div class = 'quote_div' ng-repeat = 'quote in quotes | filter: quote_search'>
+        <h1>"{{quote.text}}"</h1>
+        <p>{{quote.author}}</p>
+        <button class = 'delete_button' ng-click = 'trash_click(quote)'><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+  </div>
+
+
+
+
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+     <script src="app.js"></script>
+     <script src="controller.js"></script>
+     <script src="mainService.js"></script>
+</body>
+</html>

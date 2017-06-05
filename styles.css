@@ -1,0 +1,48 @@
+body{
+  text-align: center;
+  background-image: url('http://i.imgur.com/CrKmdtR.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  font-family: 'Niconne', cursive;
+  font-size: 6vw;
+
+}
+p{
+  font-size: 3vw;
+}
+
+div{
+  margin: 5vw;
+  background: linear-gradient(to right,lightblue,white);
+  border-width: 10px;
+  border-top: red;
+  border-left: purple;
+  border-right: orange;
+  border-bottom: green;
+  border-style: solid;
+}
+.first_div {
+    height: 16vw;
+    /* min-width: 100%; */
+    margin: 5vw;
+}
+.delete_button {
+    float: right;
+    color: #ff0000;
+    background: #ffffff;
+    font-size: 2vw;
+    position: relative;
+    right: 4vw;
+    bottom: 5vw;
+}
+.add_button {
+    float: right;
+    color: #150bd7;
+    background: #ffffff;
+    font-size: 2vw;
+    position: relative;
+    right: 4vw;
+    bottom: 8vw;
+}
